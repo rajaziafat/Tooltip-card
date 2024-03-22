@@ -2,7 +2,7 @@
 
 function Card({ name, imageUrl, role, location }) {
     return (
-        <div className="relative max-w-[330px]  mt-5  backdrop-blur-lg bg-white bg-opacity-10 rounded-2xl border border-white border-opacity-20">
+        <div className="relative max-w-[330px] cursor-pointer mt-5  backdrop-blur-lg bg-white bg-opacity-10 rounded-2xl border border-white border-opacity-20">
 
             <div className="flex gap-4 px-4  py-4 mt-2">
 
@@ -11,8 +11,8 @@ function Card({ name, imageUrl, role, location }) {
                     <p className="text-[0.7rem] leading-5  text-gray-400 mt-4">
                         {location}
                     </p>
-                    <p className="text-[0.9rem] text-[#22c55e] mt-4 font-medium">
-                        {role}
+                    <p href="/" className="text-[0.9rem] text-[#22c55e] mt-4 font-medium">
+                      <a href="">  {role}</a>
                     </p>
                 </div>
             </div>
